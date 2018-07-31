@@ -4,3 +4,23 @@
 h1 {
   color: blue;
 }
+
+.navbar{
+  background-color: #efefef;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: left;
+}
+a:hover{
+  text-decoration: none;
+  color: blue;
+  background-color: white;
+}
