@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="ut8">
-    <title>SampleApp</title>
+    <title>Bike Berlin</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -15,26 +15,11 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header class="navbar navbar-expand-lg navbar-fixed-top navbar-light">
-  <a class="navbar-brand" href="#"><i class="fab fa-jenkins"></i> SampleApp</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-link"><%= link_to "Home", root_path %></li>
-      <li class="nav-item">
-        <li class="nav-link"><%= link_to "About", simple_pages_about_path %></li>
-        <li class="nav-link"><%= link_to "Contact", simple_pages_contact_path %></li>
-      <li class="nav-link"><%= link_to "Products", products_path %></li>
-      </li>
-    </ul>
-  </div>
-</header>
+    
+<%= render 'layouts/navigation' %>
+<div class="container">
 <%= yield %>
-<footer>
-  &copy; 2018 Bike Berlin
-</footer>
+</div>
+<%= render 'layouts/footer' %>
   </body>
 </html>

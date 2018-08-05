@@ -5,22 +5,64 @@ h1 {
   color: blue;
 }
 
-.navbar{
-  background-color: #efefef;
+.fixed-bottom {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid red;
+}
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: coral;
+  text-decoration: none;
+}
+
+.center {
   text-align: center;
 }
 
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: left;
+.jumbotron {
+  background-image: asset-url('racebike.jpg');
+  background-size: cover;
+  height: 550px;
 }
-a:hover{
+
+.jumbotron h1 {
+  color: chocolate;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+  margin-right: 15px;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+.nav-item {
+  float: left;
+  margin-left: 15px;
+}
+
+.foot:hover {
   text-decoration: none;
-  color: blue;
-  background-color: white;
+  color: coral;
 }
